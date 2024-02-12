@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speedgame</title>
+    <link rel="stylesheet" href="game.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <script src="game.js" async></script>
+  </head>
+  <body>
+    <main>
+      <h1><span class="bear">BEAR</span>ry picker</h1>
+
+      <p>Score: <span class="score">0</span></p>
+
+      <div class="overlay">
+        <div class="modal">
+          <div class="close">
+            <span class="material-symbols-outlined"> close </span>
+          </div>
+          <div id="gameOverMessage">
+            <h2>Game Over!</h2>
+            <p>Your final score is: <span id="finalScore"></span></p>
+            <span id="messageForScore"></span>
+          </div>
+          <div class="image"></div>
+        </div>
+      </div>
+
+      <div class="circles">
+        <div class="circle" id="button1"></div>
+        <div class="circle" id="button2"></div>
+        <div class="circle" id="button3"></div>
+        <div class="circle" id="button4"></div>
+      </div>
+
+      <button class="button" id="startButton">Start game</button>
+      <button class="button hidden" id="endButton">End game</button>
+    </main>
+  </body>
+</html>
