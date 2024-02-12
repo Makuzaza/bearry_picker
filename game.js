@@ -8,11 +8,11 @@ const gameOverMessage = document.querySelector('#gameOverMessage');
 const finalScoreDisplay = document.querySelector('#finalScore');
 const messageForScoreDisplay = document.querySelector('#messageForScore');
 
-let soundEat = new Audio('eating.mp3');
+let soundEat = new Audio('./eating.mp3');
 soundEat.volume = 0.5;
-let soundEnd = new Audio('sound.mp3');
+let soundEnd = new Audio('./sound.mp3');
 soundEnd.volume = 0.5;
-let soundSteps = new Audio('footsteps.mp3');
+let soundSteps = new Audio('./footsteps.mp3');
 soundSteps.volume = 0.5;
 
 let score = 0;
